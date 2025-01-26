@@ -1,0 +1,1239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-family:'Caudex';
+}
+header{
+    width: 100%;
+    height: 10em;
+    display: grid;
+    position: fixed; /* Hace que el header permanezca en la parte superior */
+    z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+}
+
+header img{
+    width: 7em;
+    height: 7em;
+}
+.header-sup{
+    background-color: rgba(240, 240, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+}
+.logo{
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    height: 7em; 
+}
+
+.redes{
+    width: 90%;
+    height: 7em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    z-index: 999;
+}
+
+nav{
+    width: 100%;
+    color: white;
+    background-color: #1D1D36;
+    height: auto;
+    border: 1px solid #ffffff41;
+}
+nav ul {
+    list-style: none;
+    padding: 0; 
+    width: 90%;
+    margin: auto;
+}
+.navegar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+}
+
+.navegar li a{
+    display: grid;
+    place-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.desplegable{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: auto;
+    background-color: #1d1d36e1;
+    text-align: center;
+}
+.navegar li:hover .desplegable{
+    display: block;
+}
+.desplegable li:hover{
+    background-color: #06368d;
+}
+.navegar li {
+    text-align: center;
+    width: 9em;
+}
+.navegar li a {
+    display: grid;
+    place-items: center;
+    padding: 15px 20px;
+    position: relative;
+    text-decoration: none;
+    color: #FFFFFF;
+    letter-spacing: normal;
+}
+
+.navegar a:after{
+    content: "";
+    position: absolute;
+    background-color: #FFCB1F;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 0px;
+    transition: 0.4s;
+}
+.navegar li a:hover{
+    color: #FFCB1F;
+}
+.navegar li a:hover:after {
+    width: 100%;
+}
+.desplegable li a:hover{
+    color: white;
+}
+.banner{
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 60em;
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    background-position: center;
+}
+#en_banner{
+    margin-top: 6em;
+    margin-left: 8em;
+    width: auto;
+    padding: 3em;
+}
+#slogan{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 5em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+/*Contenidos*/
+.contenido{
+    
+    background-color: white;
+    width: 100%;
+    height: 70em;
+    display: grid;
+    place-items: center;
+}
+.cont{
+    opacity: 1;
+    position: absolute;
+    width: 90%;
+    height: 50em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cajas{
+    background-color: #5C5ADB;
+    animation-fill-mode: both;
+    display: grid;
+    place-items: left;
+    width: 100%;
+    height: 50%;
+}
+#azul{
+    background-color: #1D1D36;
+    width: 100%;
+    height: 60em;
+}
+.cajas h1{
+    color: white;
+    font-size: 5em;
+    font-family: 'Caudex';
+}
+.cajas p{
+    color: white;
+    font-size: 4em;
+    font-family: 'Caudex';
+}
+
+h1{
+    color: #1D1D36;
+    font-size: 5em;
+    font-family: 'caudex';
+    width: 90%;
+
+}
+#azul .partido{
+    margin: 0;
+    height: 100%;
+    display: flex;
+}
+#azul .partido div{
+    text-align: center;
+    padding: 3em;
+    height: 100%;
+    width: 50%;
+
+}
+#azul .partido div p{
+    font-size: 1.5em;
+}
+.imagen{
+    background-image: url('img/estudiantes.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+#im2{
+    background-image: url('img/estudiantes2.jpg');
+}
+#azul div h2{
+    font-size: 2em;
+    color: #5C5ADB;
+}
+#azul div p{
+    font-size: 20px;
+    color: white;
+}
+#azulado{
+    position: relative;
+    background-color: #1D1D36;
+    text-align: center;
+}
+.conte{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+/*Zona de actividades extra escolares*/
+#azulado h1{
+    position: absolute;
+    margin-bottom: 11em;
+    color: #FFFFFF;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    width: 90%;
+}
+#azulado .boton{
+    position: absolute;
+    top: 43em;
+}
+#carta{
+    margin-top: 3em;
+    display: flex;
+    position: none;
+    justify-content: space-around;
+    height: 100%;
+    width: 92%;
+}
+#blanco{
+    border: 1px solid;
+    height: 30em;
+    width: 24em;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.235);
+}
+#blanco div{
+    border-radius: 20px;
+    display: block;
+    height: 30em;
+    width: 24em;
+    display: grid;
+    place-items: center;    
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+
+}
+#blanco div:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+}
+#blanco h2{
+    color: rgba(240, 240, 240);
+    font-size: 2.2em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+    position: relative;
+    bottom: 5em;
+    background-color: #5c5adba0;
+    width: 100%;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blanco p{
+    color: rgba(230, 230, 230);
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,10);
+    position: relative;
+    bottom: 1.5em;
+    width: 7em;
+    height: auto;
+}
+#blanco div:hover{
+    transform: scale(1.05);
+}
+#ima1{
+    background-image: url(img/ajedrez.jpg);
+    background-size: cover;
+
+}
+#ima2{
+    background-image: url(img/clases_p.jpg);
+    background-size: cover;
+}
+#ima3{
+    background-image: url(img/tenis.jpg);
+    background-size: cover;
+}
+/*Iconos*/
+#ic{
+    height: 40em;
+    margin-top: 15em;
+}
+#ic h1{
+    text-align: center;
+}
+.iconos h2{
+    font-size: 2em;
+    color: #1D1D36;
+}
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+.iconos div{
+    text-align: center;
+    height: 22em;
+    width: 30em;
+}
+.iconos div p{
+    font-size: 1.5em;
+    color: #5C5ADB;
+    padding: 0 2em;
+}
+.iconos div svg{
+    width: 5em;
+    height: 5em;
+
+}
+#titulo{
+    margin-top: 10em;
+    height: 5em;
+}
+
+/*orientacion*/
+#orientacion{
+    background-image: url(img/alumna_e.jpg);
+    width: 100%;
+    height: 50em;
+    background-size:cover;
+    background-attachment:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#orientacion #slogan{
+    width: 100%;
+    text-align: center;
+    background-color: #5c5adb84;
+}
+/*Noticias*/
+#morado{
+    background-color: #5C5ADB;
+    height: 30em;
+    width: 100%;
+}
+.anuncios{
+    width: 100%;
+    margin-top: 1em;
+}
+#news{
+    margin-top: 0;
+    place-items: normal;
+    text-align: center;
+}
+#news .contenido{
+    position: absolute;
+    background-color: #ffffff00;
+    margin-top: 0;
+}
+#noti{
+    justify-content: space-around;
+    width: 183.2vh;
+}
+#noticias{
+    height: 20em;
+    width: 30em;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+}
+#noticias:hover{
+    transform: scale(1.05);
+}
+.mitad{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+hr{
+    color: #1D1D36;
+}
+.mitad #descripcion{
+    color: #5C5ADB;
+    font-size: 1.17em;
+    width: 100%;
+    height: 8em;
+
+}
+.mitad h2{
+    width: 100%;
+    height: 2em;
+}
+#ima4{
+    background-image: url(img/news_aje.jpg);
+    background-size: cover;
+}
+#ima5{
+    background-image: url(img/news_fb.jpg);
+    background-size: cover;
+}
+#ima6{
+    background-image: url(img/news_paella.jpg);
+    background-size: cover;
+}
+#tiempo{
+    font-size: 17px;
+    position: absolute;
+    top: 17.1em;
+    left: 1.5em;
+    color: gray;
+}
+
+/*centro*/
+#centro_b{
+    background-image: url(img/centro.jpg);
+}
+.his{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.his p{
+    color: white;
+    width: 40%;
+    font-size: 25px;
+}
+.historia{
+    width: 40%;
+    height: 22em;
+}
+#azuladoh h1{
+    color: #FFFFFF;
+    font-size: 3.5em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    width: 100%;
+}
+#azuladoh{
+    position: relative;
+    background-color: #1D1D36;
+    text-align: center;
+    display: block;
+    padding: 25px;
+    height: auto;
+}
+#hs{
+    margin-top: 17em;
+    margin-bottom: 8em;
+    height: auto
+}
+#ima7{
+    background-image: url(img/ima7.jpg);
+    background-size: cover;
+}
+#ima8{
+    background-image: url(img/ima8.jpg);
+    background-size: cover;
+}
+#ima9{
+    background-image: url(img/ima9.jpg);
+    background-size: cover;
+}
+#ima10{
+    background-image: url(img/ima10.jpg);
+    background-size: cover;
+}
+
+/*Instalaciones*/
+#instalaciones_b {
+    background-image: url('img/ima11.jpg');
+}
+.ins{
+    height: 100em;
+}
+.ins #news {
+    height: 100%;
+}
+.ins #news #instalacioness{
+    height: 80em;
+    margin-top: 10em;
+    display: grid;
+    place-items: center;
+}
+.ins #news #morado{
+    height: 50%;
+}
+#instalacioness .cont{
+    position:static;
+    height: auto;
+}
+#instalaciones{
+    display: grid;
+    place-items: center;
+    background-image: url('img/ima11.jpg');
+    position: relative;
+}
+#instalaciones h1{
+    text-align: center;
+}
+#instalaciones div{
+    height: 25%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+#insta{
+    position: absolute;
+    width: 100% ;
+}
+#instal:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: #1D1D36;
+}
+.ver_instalaciones{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+}
+.ver_instalaciones h2{
+    position: relative;
+    top: 80%;
+    color: rgba(240, 240, 240);
+    font-size: 2.2em;
+    text-shadow: 2px 2px 5px rgba(0,0,0,1);
+    background-color: #1d1d36de;
+    width: 100%;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#instalacioness #noti #noticias{
+    height: 24em;
+    width: 39em;
+}
+#instalacion1{
+    background-image: url(img/ptenis.jpg);
+}
+#instalacion2{
+    background-image: url(img/piscina.jpg);
+}
+#instalacion3{
+    background-image: url(img/pavellon.jpg);
+}
+#instalacion4{
+    background-image: url(img/padel.jpg);
+}
+#instalacion5{
+    background-image: url(img/atletismo.jpg);
+}
+#instalacion6{
+    background-image: url(img/footlball.jpg);
+}
+
+/*Aulas*/
+#aulas{
+    background-image: url(img/ima13.jpg);
+}
+#au{
+    height: 90em;
+}
+.aulas{
+    width: 90%;
+    height: 90%;
+    position: relative;
+}
+.aulas .cajas{
+    width: 50%;
+}
+.aula{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+    position: relative;
+    z-index: 100;
+    bottom: 5em;
+}
+.alineado #slogan{
+    width: 100%;
+}
+
+.aula .cajas{
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    bottom: 1em;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alineado div{
+    text-align: center;
+    width: 100%;
+}
+.alineado{
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+#izq{
+    position: relative;
+    left: 50%;
+}
+.cajai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30em;
+    width: 50%;
+    background-image: url(img/ima12.jpg);
+    background-size: cover;
+    bottom: 15em;
+}
+#ima12{
+    width: 50%;
+    height: 30em;
+    background-image: url(img/ima13.jpg);
+    background-size: cover;
+}
+#aul{
+    padding: 10px;
+    text-align: center;
+}
+#aula1{
+    background-image: url(img/ima13.jpg);
+}
+#aula2{
+    background-image: url(img/ima12.jpg);
+}
+#aula3{
+    background-image: url(img/informatica.jpg);
+}
+#aula4{
+    background-image: url(img/aula_ciencias.jpg);
+}
+#aula5{
+    background-image: url(img/aula.jpg);
+}
+#aula6{
+    background-image: url(img/gimnasio.jpg);
+}
+/*Oferta educativa*/
+
+#ofertas{
+    position: relative;
+    height: 45em;
+    background-image: url(img/ESO.jpg);
+    width: 100%;
+    margin-top: 10em;
+}
+#ofertas_b{
+    position: relative;
+    height: 45em;
+    background-image: url(img/bachiller.jpg);
+    width: 100%;
+    margin-top: 10em;
+    margin-bottom: 10em;
+
+}
+#ofertas .cajas{
+    height: 70%;
+}
+#ofertas .cajas #slogan{
+    font-size: 4em;
+}
+#ofertas .cajas p{
+    font-size: 3em;
+}
+#ofertas_b .cajas{
+    height: 60%;
+    width: 50%;
+}
+#ofertas_b .cajas #slogan{
+    font-size: 4em;
+}
+#ofertas_b .cajas p{
+    font-size: 3em;
+}
+#fra_m{
+    text-align: center;
+    width: 90%;
+}
+#fra_m h1{
+    width: 100%;
+}
+#centrar{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+#Bachillerato{
+    margin-top: 0;
+    height: auto;
+}
+#en_banner_i{
+    margin-top: 6em;
+    margin-left: 52em;
+    width: 70%;
+    padding: 3em;
+}
+
+/*ESO*/
+/*DESCRIPCION*/
+#ESO{
+    background-image: url(img/ESO_b.jpg);
+}
+/* #ESO div{
+    width: 100%;
+}   */
+#c_eso{
+    height: 50em;
+}
+#ESO .cajas{
+    width: 55%;
+    margin-top: 10em;
+}
+#ESO h1{
+    width: 100%;
+    font-size: 7em;
+}  
+#ESO h2{
+    width: 100%;
+    font-size: 5em;
+}  
+#descr_eso .cajas{
+height: 30em;
+}
+#eso_d .imagen{
+    height: 30em !important; 
+    background-image: url(img/ima14.jpg) !important;
+}
+/*Asignaturas*/
+#asi .contenido{
+    height: 47em !important;
+    position: relative;
+}
+#asi .contenido h1{
+    top: 1em;
+}
+#asignaturas{
+    top: 27.6%;
+    position: absolute;
+    width: 87%;
+    height: auto;
+    display: block;
+}
+.agrupar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.agrupar div{
+    padding: 20px;
+    height: 17em;
+    width: 25%;
+    background-color: white;
+    text-align: center;
+}
+.agrupar div p{
+    font-size: 1.5em;
+}
+.agrupar div h2{
+    font-size: 2.3em;
+}
+#az div{
+    background-color: #1D1D36;
+}
+#az div h2{
+    color: white;
+}
+#az div p{
+    color: white;
+}
+.ima{
+    background-size: cover;
+}
+#mates{
+    background-image: url(img/mates.jpg);
+}
+#lg{
+    background-image: url(img/lg.jpg);
+}
+#ing{
+    background-image: url(img/ing.jpg);
+}
+#his{
+    background-image: url(img/hs.jpg);
+}
+#bio{
+    background-image: url(img/bio.jpg);
+}
+#fq{
+    background-image: url(img/fq.jpg);
+}
+#ef{
+    background-image: url(img/ef.jpg);
+}
+#mus{
+    background-image: url(img/mus.jpg);
+}
+
+/*Bachiller*/
+.bach_c #ESO{
+    background-size: cover;
+    background-image: url(img/bachiller_c.jpg);
+}
+.centrar{
+    display: grid;
+    place-items: center;
+}
+.imagen_c{
+    background-image: url(img/ima15.jpg);
+    background-size: cover;
+}
+.bach{
+    top: 45% !important;
+}
+#tec_i{
+    background-image: url(img/tec_i.jpg);
+}
+#dib_t{
+    background-image: url(img/dib_t.jpg);
+}
+#fis{
+    background-image: url(img/fis.jpg);
+}
+#quim{
+    background-image: url(img/quim.jpg);
+}
+#titulillo{
+    margin-top: 1.2em;
+}
+#c_bach{
+    height: 40em;
+}
+/*bachilerato de sociales*/
+.bach_s #ESO{
+    background-size: cover;
+    background-image: url(img/bachiller_h.jpg);
+}
+.imagen_cs{
+    background-size: cover;
+    background-image: url(img/sociales.jpg);
+}
+#eco{
+    background-image: url(img/eco.jpg);
+}
+#patri{
+    background-image: url(img/patri.jpg);
+}
+#mat_apli{
+    background-image: url(img/mat_apli.jpg);
+}
+#latin{
+    background-image: url(img/latin.jpg);
+}
+#h_a{
+    background-image: url(img/h_a.png);
+}
+#psi{
+    background-image: url(img/psi.jpg);
+}
+/*Bachillerato de artes*/
+.bach_a #ESO{
+    background-size: cover;
+    background-image: url(img/bach_a.jpg);
+}
+.imagen_a{
+    background-size: cover;
+    background-image: url(img/bch_a.jpg);
+}
+#d_a{
+    background-image: url(img/d_a.jpg);
+}
+#t_a{
+    background-image: url(img/t_a.jpg);
+}
+#tea{
+    background-image: url(img/tea.jpg);
+}
+#d_g{
+    background-image: url(img/d_g.jpg);
+}
+#est{
+    background-image: url(img/est.jpg);
+}
+
+/*Administracion*/
+#Admin{
+    background-image: url(img/admin_b.jpg);
+}
+#Admin .cajas{
+    width: 55%;
+    margin-top: 10em;
+}
+.derecha{
+    float: right;
+}
+
+#azuld{
+    width: 80%;
+    background-color: #1D1D36;
+    height: 35em;
+    text-align: center;
+}
+#va_derecha{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 45em;
+}
+#va_izquierda{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45em;
+}
+#azuld .alinear .partido h1{
+    color: #FFFFFF;
+    width: 100%;
+}
+.alinear{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#azuld .alinear .partido{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+#texto p{
+    font-size: 25px;
+}
+#texto h2{
+    font-size: 30px;
+    padding: 5px;
+    color: #5C5ADB;
+}
+#texto{
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+#imagen_ma{
+    background-size: cover;
+    background-image: url(img/ima_ma.jpg);
+}
+#imagen_be{
+    background-size: cover;
+    background-image: url(img/ima_be.jpg);
+}
+#imagen_ti{
+    background-size: cover;
+    background-image: url(img/ima_ti.jpg);
+}
+#imagen_pro{
+    background-size: cover;
+    background-image: url(img/ima_pro.jpg);
+}
+/*Footer*/
+
+footer{
+    background-color: #1D1D36;
+    height: 17em;
+}
+#ft{
+    height: 25%;
+    justify-content: space-around;
+}
+footer .nf{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.ft{
+    text-align: center;
+    padding: 10px;
+    width: 40%;
+    color: #FFFFFF;
+}
+.ft p{
+font-size: 20px;
+}
+
+.link_footer{
+    text-align: center;
+}
+.link_footer h2{
+color: #FFFFFF;
+font-size: 2.5em;
+
+}
+.link_footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.link_footer a:hover{
+    color: #FFCB1F;
+}
+
+.link_footer ul{
+    font-size: 20px;
+    list-style: none
+}
+.link_footer ul li{
+    color: #FFFFFF;
+    margin: 0.3em;
+}
+iframe{
+    height: 15em;
+    width: 20em;
+    border-radius: 15px;
+}
+
+/*Orientacion*/
+
+#orientacionn{
+    background-image: url(img/orientacion.jpg);
+}
+#c_dep{
+    height: 50em;
+}
+#c_dep #descr_eso .cajas {
+    height: 20em;
+}
+#c_dep #descr_eso #azul .partido {
+    height: 20em;
+}
+#c_estudiando{
+    background-image: url(img/universidad.jpg);
+}
+#c_estudiando div{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+#salidas .cajai{
+    height: 30em;
+    background-image: url(img/programador.jpg);
+}
+#ima20{
+    width: 50%;
+    height: 30em;
+    background-image: url(img/medico.jpg);
+    background-size: cover;
+}
+.imagen_d{
+    background-size: cover;
+    background-image: url(img/departamentos.jpg)
+}
+#departamentos{
+    background-image: url(img/departamentos.jpg);
+}
+#ciencias{
+    background-size: cover;
+    background-image: url(img/ciencias.jpg);
+}
+#arte{
+    background-size: cover;
+    background-image: url(img/arte.webp);
+}
+#humai{
+    background-size: cover;
+    background-image: url(img/humanidades.jpeg);
+}
+#tecnologias{
+    background-size: cover;
+    background-image: url(img/idiomas.jpg);
+}
+/*Contacto*/
+form{
+    display: grid;
+    place-items: center;
+    height:100%;
+    width: 100%;
+}
+table{
+    width: 80%;
+    height: 100%;
+}
+input{
+    width: 80%;
+    height: 70%;
+    text-align: center;
+}
+input::placeholder{
+    font-size: 16px;
+    text-align: center;
+    color: #5C5ADB;
+}
+textarea::placeholder{
+    font-size: 16px;
+    text-align: center;
+    color: #5C5ADB;
+}
+textarea{
+    font-size: 16px;
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    color: #5C5ADB;
+}
+#contacto{
+    margin-top: 13em;
+    display: grid;
+    place-items: center;
+    height: 50em;
+}
+
+#contacto #azuladoh{
+    height: 90%;
+    width: 80%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+td{
+    text-align: center;
+    width: 50%;
+}
+#contacto #azuladoh div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 90%;
+}
+.datos{
+    width: 80% !important;
+    height: 110% !important;
+}
+/*Botones*/
+.boton {
+    font-family: 'Caudex';
+    margin-bottom: 10px;
+    background-color: #5C5ADB;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 2.3em;
+    width: 13em;
+}
+.botones{
+    font-family: 'Caudex';
+    background-color: #1D1D36;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    height: 2.3em;
+    width: 13em;
+}
+.botones:hover {
+    transition: 0.4s;
+    background-color: #5C5ADB;
+    color: white;
+    border: 1px solid;
+}
+.boton:hover {
+    background-color: white;
+    color: #1D1D36;
+    transition: 0.5s;
+}
+/*like*/
+.btn {
+    position: absolute;
+    top: 21.8em;
+    left: 13em;
+    background: transparent;
+    border: none;
+    outline: none;
+    fill: gray;
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+    transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+}
+
